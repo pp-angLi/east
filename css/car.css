@@ -1,0 +1,348 @@
+html, body{
+    height: 100%;
+    background: #f1f1f1;
+}
+body{
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: black;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: black;
+}
+
+input:-ms-input-placeholder{
+    color: black;
+}
+
+input::-webkit-input-placeholder{
+    color: black;
+}
+#top{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: 4.5rem;
+    z-index: 5;
+    background: #ff9538;
+}
+#top h1{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+.top_do{
+    display: inline-block;
+    position: absolute;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    color: white;
+    font-size: 1.1rem;
+    right: 8%;
+    letter-spacing: 0.1rem;
+    top: 0;
+}
+.top_do:nth-of-type(1){
+    display: none;
+}
+
+#middle{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 4.6rem;
+}
+#middle_car{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+#car_box1{
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    left: 24%;
+}
+#car_box2{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 25%;
+}
+#middle_car img{
+    width: 20rem;
+}
+#middle_car h2{
+    color: #A2A09F;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+#middle_car button{
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    border: none;
+    background: #ff9538;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+#pay{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    display: flex;
+}
+#pay1{
+    flex:3;
+    background: white;
+    height: 4.5rem;
+    line-height: 4.5rem;
+}
+#pay2{
+    flex:1;
+}
+#pay_box{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+#circle{
+    position: absolute;
+    top: 1.5rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid #9c9c9c;
+    left: 0;
+}
+
+#pay1 span:nth-of-type(1){
+    position: absolute;
+    display: inline-block;
+    height: 1.5rem;
+    left: 2.0rem;
+}
+#pay1 span:nth-of-type(2){
+    position: absolute;
+    display: inline-block;
+    height: 1.5rem;
+    left: 6.0rem;
+    font-size: 1.1rem;
+    color: orange;
+}
+#pay2 button{
+    width: 100%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: white;
+    background: #ff9538;
+    font-size: 1.4rem;
+    border: none;
+    letter-spacing: 0.1rem;
+}
+#middle_shop{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-top: 0.1rem;
+}
+.shop_box{
+    position: relative;
+    height: 13rem;
+    list-style: none;
+    background: white;
+    padding: 0.5rem 0;
+    margin-bottom: 0.3rem;
+}
+.shop_top_box{
+    display: flex;
+    height: 10rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+.shop_circle_box{
+    height: 100%;
+    width: 5rem;
+    position: relative;
+}
+.shop_circle_box div{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 4.25rem;
+    left: 1.75rem;
+    border-radius: 50%;
+    border: 1px solid #9c9c9c;
+}
+.shop_photo_box{
+    width: 10rem;
+    text-align: center;
+    height: 100%;
+}
+.shop_ind_box{
+    flex: 1;
+    height: 100%;
+    position: relative;
+    // background: orange;
+}
+.shop_ind_box h2{
+    padding-top: 0.5rem;
+    font-size: 1.0rem;
+    color: #716d6d;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.shop_ind_box h3{
+    font-size: 0.9rem;
+    color: #989898;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.shop_ind_box h4{
+    font-size: 1rem;
+    color: orange;
+    position: absolute;
+    top: 7rem;
+    width: 95%;
+    left: 2.5%;
+}
+.shop_bottom_box{
+    height: 3rem;
+    padding: 0.5rem 0;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.shop_left{
+    width: 45%;
+    display: inline-block;
+    // padding-right: 2%;
+    margin-right: 5%;
+    position: relative;
+}
+.shop_left div{
+    display: flex;
+}
+.shop_number{
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #ececec;
+    border-right: none;
+    border-left: none;
+    line-height: 1.8rem;
+    height: 1.8rem;
+    width: 80%;
+}
+.shop_left button{
+    width: 2.5rem;
+    height: 2rem;
+    background: white;
+    border: 1px solid #ececec;
+}
+.shop_left div{
+    top: -1rem;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.shop_right{
+    width: 45%;
+    position: relative;
+    display: inline-block;
+}
+.shop_right div{
+    top: -1rem;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.shop_getName{
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ececec;
+    border-right: none;
+    line-height: 1.8rem;
+    height: 1.8rem;
+}
+.shop_chioce{
+    background: white;
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+.shop_table{
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    background: white;
+    min-height: 1rem;
+    list-style: none;
+    z-index: 10;
+    display: none;
+    // overflow-y: scroll;
+    text-align: center;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 570px) {
+    html{
+        font-size: 13px;
+    }
+    #middle_car img{
+        width: 100%;
+    }
+    #middle_car h2, #middle_car button{
+        letter-spacing: 0.1rem;
+    }
+}
+@media only screen and (max-width: 424px) {
+    html{
+        font-size: 10px;
+    }
+    #middle_car img{
+        width: 100%;
+    }
+    #middle_car h2, #middle_car button{
+        letter-spacing: 0.1rem;
+    }
+}

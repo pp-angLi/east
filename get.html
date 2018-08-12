@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+
+
+
+    <script type="text/javascript">
+        var body = document.body;
+        console.log(body);
+        $.ajax({
+            url: "http://hkbase.ngrok.cc/MallSystem/cors/productList",
+            type: 'get',
+            async: false,
+            success: function(data){
+                console.log(data);
+            }
+        });
+    </script>
+    </body>
+</html>

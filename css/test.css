@@ -1,0 +1,232 @@
+html,body{
+    height: 100%;
+    background: rgb(235, 235,235);
+    // overflow-y: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+//  --- 改变  input  默认字体的颜色
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+
+input:-ms-input-placeholder{
+    color: white;
+}
+
+input::-webkit-input-placeholder{
+    color: white;
+}
+#category_box{
+    height: 100%;
+    width: 100%;
+    background: rgb(235, 235,235);
+    position: relative;
+}
+#category_right{
+    top: 0;
+    height: 100%;
+    width: 73%;
+    display: inline-block;
+    padding-right: 1%;
+    float: right;
+}
+#category_right div{
+    padding-top: 3.5rem;
+}
+#category_left{
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    // padding-top: 3rem;
+    width: 100%;
+    height: 100%;
+    float: left;
+    clear: both;
+    background: white;
+    position: relative;
+}
+#category_left > a{
+    text-decoration: none;
+    color: black;
+}
+#box_fixed{
+    position: fixed;
+    padding-top: 3rem;
+    width: 25%;
+    height: 100%;
+    float: left;
+    clear: both;
+}
+#category_right  div:nth-of-type(1){
+    padding: 1rem 0;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+}
+#category_right a{
+    font-size: 1.2rem;
+    color: orange;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.other{
+    padding: 1rem 0;
+    list-style: none;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgb(235, 235,235);
+}
+.category{
+    background: rgb(235, 235,235);
+}
+.category span{
+    color: orange;
+    width: 100%;
+    display: inline-block;
+    border-left: 5px solid orange;
+}
+
+#category_top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    height: 3rem;
+}
+#category_top div{
+    height: 100%;
+    display: flex;
+}
+#category_top_box1{
+    flex: 1;
+    position: relative;
+}
+#category_top_box2{
+    position: relative;
+    flex: 3;
+}
+#category_top_box2 input{
+    display: block;
+    height: 2rem;
+    width: 100%;
+    background: rgb(215, 215, 215);
+    border: none;
+    outline: none;
+    line-height: 2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 2.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+#category_top_box2 img{
+    position: absolute;
+    left: 0.5rem;
+    top: 0.9rem;
+}
+#category_top_box3{
+    flex: 1;
+    position: relative;
+}
+#category_top_box3 img{
+    top: 0.5rem;
+    right: 25%;
+    position: absolute;
+}
+#right_box{
+    height: 70%;
+    background: black;
+    overflow-y: scroll;
+}
+
+.right_photo{
+    position: relative;
+    width: 24%;
+    display: inline-block;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 0.5%;
+    margin-top: 5px;
+}
+
+.right_photo span{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+}
+
+@media screen and (min-width: 560px) and (max-width: 970px){
+    html{
+        font-size: 13px;
+    }
+    #category_top_box3 img{
+        width: 20px;
+    }
+    #category_top_box2 img{
+        width: 15px;
+    }
+    .right_photo{
+        width: 32%;
+        margin-left: 0.7%;
+    }
+}
+@media screen and (min-width: 390px) and (max-width: 559px){
+    html{
+        font-size: 12px;
+    }
+    #category_top_box3 img{
+        width: 19px;
+    }
+    #category_top_box2 img{
+        width: 14px;
+    }
+    .right_photo{
+        width: 32%;
+        margin-left: 0.5%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 389px){
+    html{
+        font-size: 11px;
+    }
+    #category_top_box3 img{
+        width: 19px;
+    }
+    #category_top_box2 img{
+        width: 14px;
+    }
+    .right_photo{
+        width: 49%;
+        margin-left: 0.2%;
+    }
+}
+@media screen and (max-width: 319px){
+    html{
+        font-size: 10px;
+    }
+    #category_top_box3 img{
+        width: 19px;
+    }
+    #category_top_box2 img{
+        width: 14px;
+    }
+    .right_photo{
+        width: 100%;
+    }
+    .right_photo span{
+        bottom: 15%;
+        font-size: 1.3rem;
+    }
+}

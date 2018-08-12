@@ -1,0 +1,967 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background: rgb(235, 235,235);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    letter-spacing: 0.5rem;
+}
+
+//  --- 改变  input  默认字体的颜色
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+
+input:-ms-input-placeholder{
+    color: white;
+}
+
+input::-webkit-input-placeholder{
+    color: white;
+}
+
+// 顶部
+#index_head{  // 顶部盒子
+    position: relative;
+    height: 30rem;
+    // display: flex;
+}
+#index_head_photo{
+    height: 28rem;
+    background: url(../img/running.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#index_head_box_find{
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    z-index: 10;
+    // background: rgba(150, 139, 139, 0.32);
+}
+
+#head_find_photo{
+    position: relative;
+    flex: 20;
+    z-index: 5;
+}
+#head_find_photo div{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#photo_find{
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+}
+
+#index_head_find{  // 搜索框
+    display: block;
+    // float: right;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.24);
+    border: none;
+    outline: none;
+    line-height: 2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    padding-left: 2.5rem;
+    letter-spacing: 0.2rem;
+}
+#head_find_sao{
+    flex:1;
+}
+#head_find_sao img{
+    position: absolute;
+    right: 1rem;
+    top: 1.1rem;
+    // background: #4c3838;
+}
+
+#index_headlines{
+    position: relative;
+    height: 2rem;
+    background: white;
+    overflow: hidden;
+}
+
+#index_headlines h1{
+    height: 2rem;
+    line-height: 2rem;
+    display: inline;
+    font-size: 1.2rem;
+    color: orange;
+    padding-left: 1.0rem;
+}
+#index_headlines span{
+    font-size: 0.9rem;
+    color: rgb(145, 145, 145);
+}
+
+//
+//
+// 顶部end
+//
+//
+
+#index_classification{
+    position: relative;
+    height: 26rem;
+    padding-top: 1rem;
+}
+.index_classification_box{
+    display: flex;
+}
+.inde_classification_photo{
+    flex: 1;
+    list-style: none;
+    padding-top: 0.1rem;
+}
+.classification_photo_box{
+    margin: 0 auto;
+    height: 10rem;
+    width: 98%;
+    background: white;
+    text-align: center;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+}
+.classification_photo_box div{
+    height: 6.4rem;
+    // flex: 1;
+    text-align: center;
+    position: relative;
+}
+.classification_photo_box span{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 5%;
+    left: 0;
+}
+#photo1{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 90%;
+}
+#photo2{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    width: 90%;
+}
+#photo3{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 60%;
+}
+#photo4{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 70%;
+}
+#photo5{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 60%;
+}
+#photo6{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 90%;
+}
+#photo7{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 80%;
+}
+#photo8{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 80%;
+}
+#photo9{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    // padding-top: 1rem;
+    width: 90%;
+}
+#photo10{
+    line-height: 6.4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 80%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    #index_head{  // 顶部盒子
+        height: 20rem;
+    }
+    #index_head_photo{
+        height: 18rem;
+    }
+    #index_classification{
+        position: relative;
+        height: 14.5rem;
+        padding-top: .5rem;
+    }
+    .classification_photo_box{
+        margin: 0 auto;
+        height: 7rem;
+        width: 98%;
+        background: white;
+        text-align: center;
+        position: relative;
+        // display: flex;
+        // flex-direction: column;
+    }
+    .classification_photo_box div{
+        height: 4.8rem;
+        // flex: 1;
+        text-align: center;
+        position: relative;
+    }
+    .classification_photo_box span{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        left: 0;
+    }
+    .classification_photo_box span{
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        font-size: .9rem;
+        left: 0;
+        overflow: hidden;
+    }
+    #photo1{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+        width: 90%;
+    }
+    #photo2{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.2rem;
+        width: 90%;
+    }
+    #photo3{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.0rem;
+        width: 60%;
+    }
+    #photo4{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.0rem;
+        width: 70%;
+    }
+    #photo5{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.0rem;
+        width: 60%;
+    }
+    #photo6{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.0rem;
+        width: 90%;
+    }
+    #photo7{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.0rem;
+        width: 80%;
+    }
+    #photo8{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.0rem;
+        width: 80%;
+    }
+    #photo9{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 100%;
+    }
+    #photo10{
+        line-height: 4.8rem;
+        margin: 0 auto;
+        padding-top: 1.1rem;
+        width: 80%;
+    }
+
+}
+// // @media screen and (min-width: 420px) and (max-height: 585px) {}
+// // @media screen and (min-width: 350px) and (max-height: 545px) {}
+@media screen and (min-width: 420px) and (max-width: 599px) {
+    #index_head{  // 顶部盒子
+        height: 15rem;
+    }
+    #index_head_photo{
+        height: 13rem;
+    }
+    #index_classification{
+        position: relative;
+        height: 10.5rem;
+        padding-top: .5rem;
+    }
+    .classification_photo_box{
+        margin: 0 auto;
+        height: 5rem;
+        width: 98%;
+        background: white;
+        text-align: center;
+        position: relative;
+        // display: flex;
+        // flex-direction: column;
+    }
+    .classification_photo_box div{
+        height: 3.2rem;
+        // flex: 1;
+        text-align: center;
+        position: relative;
+    }
+    .classification_photo_box span{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        left: 0;
+    }
+    .classification_photo_box span{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        font-size: .9rem;
+        left: 0;
+    }
+    #photo1{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 90%;
+    }
+    #photo2{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: 0.2rem;
+        width: 90%;
+    }
+    #photo3{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 60%;
+    }
+    #photo4{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 70%;
+    }
+    #photo5{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 60%;
+    }
+    #photo6{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 90%;
+    }
+    #photo7{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 80%;
+    }
+    #photo8{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 80%;
+    }
+    #photo9{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .7rem;
+        width: 90%;
+    }
+    #photo10{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    html{
+        font-size: 10px;
+    }
+    #index_head{  // 顶部盒子
+        height: 10rem;
+    }
+    #index_head_photo{
+        height: 8rem;
+    }
+    #index_classification{
+        position: relative;
+    }
+    .classification_photo_box{
+        margin: 0 auto;
+        height: 5rem;
+        width: 98%;
+        background: white;
+        text-align: center;
+        position: relative;
+        padding-bottom: 2px;
+        // display: flex;
+        // flex-direction: column;
+    }
+    .classification_photo_box div{
+        height: 3.2rem;
+        // flex: 1;
+        text-align: center;
+        position: relative;
+    }
+    .classification_photo_box span{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        left: 0;
+    }
+    .classification_photo_box span{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        bottom: 2%;
+        font-size: .9rem;
+        left: 0;
+    }
+    #photo1{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 90%;
+    }
+    #photo2{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: 0.2rem;
+        width: 90%;
+    }
+    #photo3{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 60%;
+    }
+    #photo4{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 70%;
+    }
+    #photo5{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 60%;
+    }
+    #photo6{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 90%;
+    }
+    #photo7{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 80%;
+    }
+    #photo8{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 80%;
+    }
+    #photo9{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .7rem;
+        width: 90%;
+    }
+    #photo10{
+        line-height: 3.2rem;
+        margin: 0 auto;
+        padding-top: .5rem;
+        width: 80%;
+    }
+}
+
+
+//第二部分end
+
+.index_repeat{
+    margin-top: 1.0rem;
+    position: relative;
+    background: white;
+    // height: 20rem;
+    // overflow: hidden;
+}
+
+.title_box{
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 3px solid rgba(245, 245, 245, 1);
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.title_box span{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    // float: right;
+    color: rgb(145, 145, 145);
+}
+.title_right{
+    float: right;
+}
+.title_right:hover{
+    cursor: pointer;;
+}
+.title_left{
+    float: left;
+}
+
+//title - and - top end
+
+
+#index_hotsell_photobox, #index_recommend_photobox, #index_exquisite_photobox{
+    position: relative;
+    height: 24rem;
+}
+.index_hotsell_box, .index_recommend_box, .index_exquisite_box{
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+    margin-top: .1rem;
+}
+
+#index_hotsell_photo1box{
+    position: relative;
+}
+#index_hotsell_photo2box{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.index_hotsell_box2{
+    position: relative;
+    flex: 1;
+    background: white;
+}
+.index_hotsell_box2:nth-of-type(1){
+    border-right: 1px solid rgb(235, 235,235);
+}
+.index_hotsell_box2:nth-of-type(2){
+    border-left: 1px solid rgb(235, 235,235);
+}
+.index_hotsell_box2:nth-of-type(1) div{
+    position: absolute;
+    right: 5%;
+    top: 2.5rem;
+    width: 60%;
+}
+.index_hotsell_box2:nth-of-type(2) div{
+    position: absolute;
+    right: 5%;
+    top: 1.5rem;
+    width: 60%;
+}
+#index_hotsell_photobox h2{
+    position: absolute;
+    font-size: 1.3rem;
+    height: 12rem;
+    line-height: 12rem;
+    top: 0;
+    left: 15%;
+    // font-weight: 200;
+}
+#index_hotsell_photo1box h2{
+    color: #da6464;
+}
+#index_hotsell_photobox img{
+    float: right;
+}
+
+//热卖end
+
+#index_recommend_photo1box{
+    position: relative;
+}
+#index_recommend_photo2box{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.index_recommend_box2{
+    position: relative;
+    flex: 1;
+    background: white;
+    // float: left;
+}
+.index_recommend_box2:nth-of-type(1){
+    border-right: 1px solid rgb(235, 235,235);
+}
+.index_recommend_box2:nth-of-type(2){
+    border-left: 1px solid rgb(235, 235,235);
+}
+.index_recommend_box2:nth-of-type(1) div{
+    position: absolute;
+    width: 50%;
+    top: 2rem;
+    right: 5%;
+}
+.index_recommend_box2:nth-of-type(2) div{
+    position: absolute;
+    width: 50%;
+    top: 1rem;
+    right: 5%;
+}
+#index_recommend_photobox h2{
+    position: absolute;
+    font-size: 1.3rem;
+    height: 12rem;
+    line-height: 12rem;
+    top: 0;
+    left: 15%;
+    // font-weight: 200;
+}
+#index_recommend_photobox img{
+    float: right;
+}
+
+//推荐end
+
+#index_exquisite_photo1box{
+    position: relative;
+}
+#index_exquisite_photo2box{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.index_exquisite_box2{
+    position: relative;
+    flex: 1;
+    background: white;
+    // float: left;
+}
+.index_exquisite_box2:nth-of-type(1){
+    border-right: 1px solid rgb(235, 235,235);
+}
+.index_exquisite_box2:nth-of-type(2){
+    border-left: 1px solid rgb(235, 235,235);
+}
+.index_exquisite_box2:nth-of-type(1) div{
+    position: absolute;
+    width: 70%;
+    top: 4rem;
+    right: 5%;
+}
+.index_exquisite_box2:nth-of-type(2) div{
+    position: absolute;
+    width: 70%;
+    top: 4rem;
+    right: 5%;
+}
+#index_exquisite_photobox h2{
+    position: absolute;
+    font-size: 1.3rem;
+    height: 12rem;
+    line-height: 12rem;
+    top: 0;
+    left: 15%;
+    // font-weight: 200;
+}
+#index_exquisite_photobox img{
+    float: right;
+}
+#foryou{
+    margin-top: 1rem;
+    background: white;
+}
+#foryou h2{
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(145, 145, 145);
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    #index_hotsell_photobox, #index_recommend_photobox, #index_exquisite_photobox{
+        height: 16rem;
+    }
+    .index_hotsell_box, .index_recommend_box, .index_exquisite_box{
+        height: 8rem;
+    }
+    .index_hotsell_box2:nth-of-type(1) div{
+        top: 1.5rem;
+        width: 70%;
+    }
+    .index_hotsell_box2:nth-of-type(2) div{
+        right: 9%;
+        top: 1rem;
+        width: 60%;
+    }
+    #index_hotsell_photobox h2{
+        position: absolute;
+        font-size: 1.1rem;
+        height: 8rem;
+        line-height: 8rem;
+        top: 0;
+        left: 15%;
+        // font-weight: 200;
+    }
+    .index_recommend_box2:nth-of-type(1) div{
+        position: absolute;
+        width: 50%;
+        top: 2rem;
+        right: 5%;
+    }
+    .index_recommend_box2:nth-of-type(2) div{
+        position: absolute;
+        width: 50%;
+        top: 0.8rem;
+        right: 13%;
+    }
+    #index_recommend_photobox h2{
+        position: absolute;
+        font-size: 1.1rem;
+        height: 8rem;
+        line-height: 8rem;
+        top: 0;
+        left: 15%;
+        // font-weight: 200;
+    }
+    .index_exquisite_box2:nth-of-type(1) div{
+        position: absolute;
+        width: 70%;
+        top: 1rem;
+        right: 5%;
+    }
+    .index_exquisite_box2:nth-of-type(2) div{
+        position: absolute;
+        width: 70%;
+        top: 1.3rem;
+        right: 5%;
+    }
+    #index_exquisite_photobox h2{
+        position: absolute;
+        font-size: 1.1rem;
+        height: 8rem;
+        line-height: 8rem;
+        top: 0;
+        left: 15%;
+        // font-weight: 200;
+    }
+        #foryou h2{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 599px) {
+    #index_hotsell_photobox, #index_recommend_photobox, #index_exquisite_photobox{
+        height: 11.6rem;
+    }
+    .index_hotsell_box, .index_recommend_box, .index_exquisite_box{
+        height: 5.8rem;
+    }
+    .index_hotsell_box2:nth-of-type(1) div{
+        top: 1.5rem;
+        width: 70%;
+    }
+    .index_hotsell_box2:nth-of-type(2) div{
+        right: 9%;
+        top: 1rem;
+        width: 60%;
+    }
+    #index_hotsell_photobox h2{
+        position: absolute;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        height: 5.8rem;
+        line-height: 5.8rem;
+        top: 0;
+        left: 15%;
+        // font-weight: 200;
+    }
+    .index_recommend_box2:nth-of-type(1) div{
+        position: absolute;
+        width: 50%;
+        top: 1.3rem;
+        right: 5%;
+    }
+    .index_recommend_box2:nth-of-type(2) div{
+        position: absolute;
+        width: 50%;
+        top: 0.58rem;
+        right: 13%;
+    }
+    #index_recommend_photobox h2{
+        position: absolute;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        height: 5.8rem;
+        line-height: 5.8rem;
+        top: 0;
+        left: 15%;
+        // font-weight: 200;
+    }
+    .index_exquisite_box2:nth-of-type(1) div{
+        position: absolute;
+        width: 70%;
+        top: 1rem;
+        right: 5%;
+    }
+    .index_exquisite_box2:nth-of-type(2) div{
+        position: absolute;
+        width: 70%;
+        top: 1.3rem;
+        right: 5%;
+    }
+    #index_exquisite_photobox h2{
+        position: absolute;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        height: 5.8rem;
+        line-height: 5.8rem;
+        top: 0;
+        left: 15%;
+        // font-weight: 200;
+    }
+    #foryou h2{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 419px){
+        #index_hotsell_photobox, #index_recommend_photobox, #index_exquisite_photobox{
+        height: 9rem;
+    }
+    .index_hotsell_box, .index_recommend_box, .index_exquisite_box{
+        height: 4.5rem;
+    }
+    .index_hotsell_box2:nth-of-type(1) div{
+        top: 1.5rem;
+        width: 70%;
+    }
+    .index_hotsell_box2:nth-of-type(2) div{
+        right: 9%;
+        top: 1rem;
+        width: 60%;
+    }
+    #index_hotsell_photobox h2{
+        position: absolute;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        top: 0;
+        left: 5%;
+        // font-weight: 200;
+    }
+    .index_recommend_box2:nth-of-type(1) div{
+        position: absolute;
+        width: 50%;
+        top: 1.3rem;
+        right: 5%;
+    }
+    .index_recommend_box2:nth-of-type(2) div{
+        position: absolute;
+        width: 50%;
+        top: 0.58rem;
+        right: 13%;
+    }
+    #index_recommend_photobox h2{
+        position: absolute;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        top: 0;
+        left: 5%;
+        // font-weight: 200;
+    }
+    .index_exquisite_box2:nth-of-type(1) div{
+        position: absolute;
+        width: 70%;
+        top: 1rem;
+        right: 5%;
+    }
+    .index_exquisite_box2:nth-of-type(2) div{
+        position: absolute;
+        width: 70%;
+        top: 1.3rem;
+        right: 5%;
+    }
+    #index_exquisite_photobox h2{
+        position: absolute;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        top: 0;
+        left: 5%;
+        // font-weight: 200;
+    }
+    #foryou h2{
+        font-size: 0.9rem;
+    }
+}
+
+.index_exquisite_box:nth-of-type(1) h2, .index_recommend_box:nth-of-type(1) h2, .index_hotsell_box:nth-of-type(1) h2{
+    color: white;
+}
+
+//精选end
